@@ -36,9 +36,9 @@
 
         .content {
             position: absolute;
-            width: 100%;
+            // width: 100%;
             z-index: 3;
-            padding: 10px 20px;
+            padding: 7px 12px;
             transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
             background: linear-gradient(
                 180deg,
@@ -46,6 +46,7 @@
                 rgba(0, 0, 0, 1)
             );
             bottom: -70px;
+            text-align: center;
         }
 
         .title {

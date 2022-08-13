@@ -17,3 +17,120 @@ body {
   margin-top: 200px;
   margin-left: 200px;
 }
+
+/* xeedev mediaquery */
+@media only screen and (max-width: 600px) {
+  .xee-close-button{
+    left: 10px !important;
+    transition: 1s;
+  }
+  .bottom-tags{
+    position: fixed !important;
+    bottom: 0;
+  }
+  
+  .contact-page{
+    height: 80% !important;
+  }
+  
+  .about-page{
+    height: 75% !important;
+  }
+  .nav-bar{
+    right:-100px;
+    transition: 1s;
+    position: fixed !important;
+  }
+  .xee-toggle-button{
+    display: block !important;
+    transition: 1s;
+  }
+  .page{
+    overflow-x: hidden;
+  }
+  .home-page .text-zone{
+    width: 80% !important;
+  }
+  .home-page .flat-button{
+    background-color: #fff !important;
+  }
+  .home-page h1{
+    font-size: 44px !important;
+    line-height: 44px !important;
+  }
+  .home-page h1:after{
+    top:30px !important;
+    left: -225px !important;
+    position:  relative !important;
+  }
+  .tags{
+    left: 20px !important;
+  }
+  .stage-cube-cont{
+    position: relative !important;
+    top: 525px !important;
+    left: 90px !important;
+    height: 40% !important;
+  }
+  .container.contact-page .text-zone, .container.about-page .text-zone, .container.portfolio-page .text-zone{
+    width: 84% !important;
+    left: 8% !important;
+  }
+  .portfolio-page h1.page-title{
+    margin-left: 0px !important;
+  }
+  .portfolio-page .images-container{
+    flex-direction: column;
+  }
+  .portfolio-page .image-box{
+    flex: auto !important;
+    max-width: 100% !important;
+  }
+  .portfolio-page{
+    width: 70% !important;
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+  }
+  .map-wrap{
+    float: none !important;
+    width: 84.7% !important;
+    height: 40% !important;
+    margin: 653px auto !important;
+    position: absolute !important;
+    padding-bottom: 60px !important;
+    background: none !important;
+  }
+  .info-map{
+    top: 652px !important;
+    position: relative !important;
+    width: 100% !important;
+    right: auto !important;
+  }
+  .xee-container{
+    width: 74% !important;
+    margin-left: 30px;
+  }
+  /* Xeedev's customization */
+.xee-toggle-button{
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  z-index: 2;
+}
+.xee-fa-bars svg{
+  color: #fff !important;
+  background-color: #2A0845;
+  padding: 4px 10px;
+}
+.xee-show-hide{
+  right: 0px !important; 
+  transition: 1s;
+  transition-timing-function: ease;
+}
+.xee-op{
+  opacity: 0.2 !important;
+  transition: 1s !important;
+}
+}
