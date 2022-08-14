@@ -19,7 +19,7 @@ body {
 }
 
 /* xeedev mediaquery */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1025px) {
   .xee-close-button{
     left: 10px !important;
     transition: 1s;
@@ -99,6 +99,8 @@ body {
     position: absolute !important;
     padding-bottom: 60px !important;
     background: none !important;
+    top: auto !important;
+    right: auto !important;
   }
   .info-map{
     top: 652px !important;

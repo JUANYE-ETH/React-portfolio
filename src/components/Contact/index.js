@@ -88,6 +88,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
+        <div className='xee-container'>
         <div className="info-map">
           Juan Velasco,
           <br />
@@ -104,6 +105,7 @@ const Contact = () => {
               <Popup>Juan lives here, come over for a cup of coffee :)</Popup>
             </Marker>
           </MapContainer>
+        </div>
         </div>
       </div>
       <Loader type="pacman" />
