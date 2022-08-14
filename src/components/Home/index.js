@@ -8,35 +8,6 @@ import Loader from 'react-loaders'
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const nameArray = ['u', 'a', 'n']
-  const jobArray = [
-    'a',
-    '',
-    'f',
-    'u',
-    'l',
-    'l',
-    '',
-    's',
-    't',
-    'a',
-    'c',
-    'k',
-    '',
-    'w',
-    'e',
-    'b',
-    '',
-    'd',
-    'e',
-    'v',
-    'e',
-    'l',
-    'o',
-    'p',
-    'e',
-    'r',
-    '.',
-  ]
 
   useEffect(() => {
     setTimeout(() => {
@@ -63,12 +34,19 @@ const Home = () => {
             <br />
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={jobArray}
+              strArray={'a full stack'.split('')}
+              idx={5}
+            />
+            <br />
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={'web developer'.split('')}
               idx={5}
             />
           </h1>
           <h2>
-            Frontend Development / Full Stack Development / Backend Development{' '}
+            JavaScript | React | Redux | HTML | CSS | Ruby | Ruby on Rails |
+            Solidity
           </h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
