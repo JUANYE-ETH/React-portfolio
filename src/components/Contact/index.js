@@ -53,7 +53,13 @@ const Contact = () => {
             please don't hesitate to contact me using the form below.
           </p>
           <div className="contact-form">
-            <form ref={refForm} method="POST" data-netlify="true">
+            <form
+              ref={refForm}
+              name="contact v1"
+              method="POST"
+              data-netlify="true"
+            >
+              <input type="hidden" name="form-name" value="contact v1" />
               <ul>
                 <li className="half">
                   <input placeholder="Name" type="text" name="name" required />
