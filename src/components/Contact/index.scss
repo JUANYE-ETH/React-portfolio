@@ -70,6 +70,16 @@
       float: right;
       text-align: center;
       margin-right: 10px;
+
+      &:hover {
+        background-color: #2A0845;
+        color: white;
+      }
+
+      &:active {
+        box-shadow: 0 5px white;
+        transform: translateY(4px);
+      }
     }
   }
   

@@ -74,8 +74,12 @@
       white-space: nowrap;
   
       &:hover {
-        background: #2A0845;
+        background-color: #2A0845;
         color: white;
+      }
+
+      &:active {
+        transform: translateY(4px)
       }
     }
   }
