@@ -53,7 +53,7 @@ const Contact = () => {
             please don't hesitate to contact me using the form below.
           </p>
           <div className="contact-form">
-            <form ref={refForm} onSubmit={sendEmail}>
+            <form ref={refForm} method="POST" data-netlify="true">
               <ul>
                 <li className="half">
                   <input placeholder="Name" type="text" name="name" required />
@@ -82,30 +82,35 @@ const Contact = () => {
                   ></textarea>
                 </li>
                 <li>
+                  <div class="field">
+                    <div data-netlify-recaptcha="true"></div>
+                  </div>
+                </li>
+                <li>
                   <input type="submit" className="flat-button" value="SEND" />
                 </li>
               </ul>
             </form>
           </div>
         </div>
-        <div className='xee-container'>
-        <div className="info-map">
-          Juan Velasco,
-          <br />
-          United States of America,
-          <br />
-          Tampa,FL
-          <br />
-          <span>juanyevela@gmail.com</span>
-        </div>
-        <div className="map-wrap">
-          <MapContainer center={[27.964157, -82.452606]} zoom={13}>
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[27.964157, -82.452606]}>
-              <Popup>Juan lives here, come over for a cup of coffee :)</Popup>
-            </Marker>
-          </MapContainer>
-        </div>
+        <div className="xee-container">
+          <div className="info-map">
+            Juan Velasco,
+            <br />
+            United States of America,
+            <br />
+            Tampa,FL
+            <br />
+            <span>juanyevela@gmail.com</span>
+          </div>
+          <div className="map-wrap">
+            <MapContainer center={[27.964157, -82.452606]} zoom={13}>
+              <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+              <Marker position={[27.964157, -82.452606]}>
+                <Popup>Juan lives here, come over for a cup of coffee :)</Popup>
+              </Marker>
+            </MapContainer>
+          </div>
         </div>
       </div>
       <Loader type="pacman" />
