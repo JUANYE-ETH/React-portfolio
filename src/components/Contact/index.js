@@ -58,6 +58,7 @@ const Contact = () => {
               method="POST"
               data-netlify="true"
               onSubmit={sendEmail}
+              onSumbit="submit"
             >
               <input type="hidden" name="form-name" value="contact v1" />
               <ul>
