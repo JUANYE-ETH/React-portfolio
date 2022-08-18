@@ -31,11 +31,48 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <form name="contact v1" netlify netlify-honeypot="bot-field" hidden>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
-    </form>
+    <form
+              name="contact v1"
+              method="POST"
+              data-netlify="true"
+              onSubmit="submit"
+              action=/contact
+            >
+              <input type="hidden" name="form-name" value="contact v1" />
+              <ul>
+                <li className="half">
+                  <input placeholder="Name" type="text" name="name" required />
+                </li>
+                <li className="half">
+                  <input
+                    placeholder="Email"
+                    type="email"
+                    name="email"
+                    required
+                  />
+                </li>
+                <li>
+                  <input
+                    placeholder="Subject"
+                    type="text"
+                    name="subject"
+                    required
+                  />
+                </li>
+                <li>
+                  <textarea
+                    placeholder="Message"
+                    name="message"
+                    required
+                  ></textarea>
+                </li>
+                <li>
+                  <button type="submit" className="flat-button">
+                    SEND
+                  </button>
+                </li>
+              </ul>
+            </form>
     <div id="root"></div>
     <!--
       This HTML file is a template.
