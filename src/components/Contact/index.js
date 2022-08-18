@@ -57,8 +57,8 @@ const Contact = () => {
               name="contact v1"
               method="POST"
               data-netlify="true"
-              onSubmit={sendEmail}
-              onSumbit="submit"
+              onSubmit="submit"
+              action="/"
             >
               <input type="hidden" name="form-name" value="contact v1" />
               <ul>
