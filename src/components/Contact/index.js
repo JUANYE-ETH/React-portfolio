@@ -1,13 +1,13 @@
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
-import { useEffect, useState } from 'react'
-// import emailjs from '@emailjs/browser'
+import { useEffect, useRef, useState } from 'react'
+import emailjs from '@emailjs/browser'
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  // const refForm = useRef()
+  const refForm = useRef()
 
   useEffect(() => {
     setTimeout(() => {
@@ -15,26 +15,26 @@ const Contact = () => {
     }, 3000)
   }, [])
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault()
+  const sendEmail = (e) => {
+    e.preventDefault()
 
-  //   emailjs
-  //     .sendForm(
-  //       'service_udl7sbl',
-  //       'template_8a8ws4v',
-  //       refForm.current,
-  //       '-I4SjcEUp7wynhuSq'
-  //     )
-  //     .then(
-  //       () => {
-  //         alert('Message successfully sent!')
-  //         window.location.reload(false)
-  //       },
-  //       () => {
-  //         alert('Failed to send the message, please try again')
-  //       }
-  //     )
-  // }
+    emailjs
+      .sendForm(
+        'service_udl7sbl',
+        'template_8a8ws4v',
+        refForm.current,
+        '-I4SjcEUp7wynhuSq'
+      )
+      .then(
+        () => {
+          alert('Message successfully sent!')
+          window.location.reload(false)
+        },
+        () => {
+          alert('Failed to send the message, please try again')
+        }
+      )
+  }
 
   return (
     <>
@@ -57,7 +57,7 @@ const Contact = () => {
               name="contact v1"
               method="POST"
               data-netlify="true"
-              onSubmit="submit"
+              onSubmit={sendEmail}
             >
               <input type="hidden" name="form-name" value="contact v1" />
               <ul>
