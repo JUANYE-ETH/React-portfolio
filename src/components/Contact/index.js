@@ -48,9 +48,10 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in freelance opportunities - especially on ambitious
-            or large projects. However, if you have other requests or questions,
-            please don't hesitate to contact me using the form below.
+            I am interested in full-time, part-time and freelance opportunities
+            - especially on ambitious or large projects. However, if you have
+            other requests or questions, please don't hesitate to contact me
+            using the form below.
           </p>
           <div className="contact-form">
             <form
@@ -104,17 +105,15 @@ const Contact = () => {
           <div className="info-map">
             Juan Velasco,
             <br />
-            United States of America,
-            <br />
-            Tampa,FL
+            FL, USA,
             <br />
             <span>juanyevela@gmail.com</span>
           </div>
           <div className="map-wrap">
-            <MapContainer center={[27.964157, -82.452606]} zoom={13}>
+            <MapContainer center={[27.6648, -81.5158]} zoom={7}>
               <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-              <Marker position={[27.964157, -82.452606]}>
-                <Popup>Juan lives here, come over for a cup of coffee :)</Popup>
+              <Marker position={[27.6648, -81.5158]}>
+                <Popup></Popup>
               </Marker>
             </MapContainer>
           </div>
