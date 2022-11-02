@@ -105,14 +105,14 @@ const Contact = () => {
           <div className="info-map">
             Juan Velasco,
             <br />
-            FL, USA,
+            United States of America,
             <br />
             <span>juanyevela@gmail.com</span>
           </div>
           <div className="map-wrap">
-            <MapContainer center={[27.6648, -81.5158]} zoom={7}>
+            <MapContainer center={[37.0902, -95.7129]} zoom={4}>
               <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-              <Marker position={[27.6648, -81.5158]}>
+              <Marker position={[37.0902, -95.7129]}>
                 <Popup></Popup>
               </Marker>
             </MapContainer>
